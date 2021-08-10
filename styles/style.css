@@ -27,6 +27,11 @@ header {
 header img {
   margin: 1.5rem auto;
 }
+@media (min-width: 920px) {
+  header img {
+    margin: 3rem auto;
+  }
+}
 
 .tip-calculator {
   font-size: 1.5rem;
@@ -38,6 +43,16 @@ header img {
   padding: 2rem;
   display: flex;
   flex-flow: column nowrap;
+  gap: 1rem;
+}
+@media (min-width: 920px) {
+  .tip-calculator .container {
+    flex-flow: row nowrap;
+    border-radius: 1.5rem;
+    max-width: 920px;
+    margin: 0 auto;
+    box-shadow: 0 0 50px rgba(0, 73, 77, 0.2);
+  }
 }
 .tip-calculator .input-control {
   height: 3rem;
@@ -80,10 +95,15 @@ header img {
 .tip-calculator input:focus {
   border: 2px solid #7f9c9f;
 }
+.tip-calculator input.input-error {
+  border: 2px solid #bb5d5d;
+}
 .tip-calculator .head {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 .tip-calculator .head .title {
   color: #5e7a7d;
@@ -116,17 +136,34 @@ header img {
   background-color: #c5e4e7;
   color: #00494d;
 }
+@media (min-width: 920px) {
+  .tip-calculator .tip-selector {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .tip-calculator .controls {
   padding: 1rem;
   display: flex;
   flex-flow: column nowrap;
   gap: 2rem;
-  margin-bottom: 1rem;
+}
+@media (min-width: 920px) {
+  .tip-calculator .controls {
+    width: 100%;
+  }
 }
 .tip-calculator .results {
   background-color: #00494d;
   border-radius: 1rem;
   padding: 3rem 1.5rem 1.5rem;
+}
+@media (min-width: 920px) {
+  .tip-calculator .results {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
 }
 .tip-calculator .tip-amount,
 .tip-calculator .total {

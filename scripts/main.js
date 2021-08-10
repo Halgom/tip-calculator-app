@@ -6,6 +6,7 @@ const tip25 = document.getElementById("tip-25");
 const tip50 = document.getElementById("tip-50");
 const tipCustom = document.getElementById("tip-custom");
 const nbPeopleInput = document.getElementById("number-of-people");
+const nbPeopleError = document.querySelector(".number-of-people .error");
 const resetButton = document.getElementById("reset");
 const tipAmountOut = document.getElementById("tip-amount");
 const totalOut = document.getElementById("total");
@@ -29,6 +30,13 @@ function reset () {
 function update () {
     let billAmount = billInput.value;
     let nbPeople = nbPeopleInput.value;
+    if (parseInt(nbPeople) === 0) {
+        nbPeopleInput.classList.add("input-error");
+        nbPeopleError.innerHTML = "Can't be zero"
+    } else {
+        nbPeopleInput.classList.remove("input-error");
+        nbPeopleError.innerHTML = ""
+    }
     let tipPercentage = function () {
         for (let i = 0; i < tipButtons.length; i++) {
             if (tipButtons[i].classList.contains("active")) {
