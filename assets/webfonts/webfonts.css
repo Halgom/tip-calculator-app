@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Space Mono';
+    src: url('SpaceMono-Bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('SpaceMono-BoldItalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('SpaceMono-Italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('SpaceMono-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

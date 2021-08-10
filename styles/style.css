@@ -1,0 +1,156 @@
+.tip-calculator #reset, .tip-calculator .tip-selector button {
+  height: 3rem;
+  width: 100%;
+  font-family: "Space Mono", Serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #c5e4e7;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+header img {
+  margin: 1.5rem auto;
+}
+
+.tip-calculator {
+  font-size: 1.5rem;
+  font-family: "Space Mono", Serif;
+}
+.tip-calculator .container {
+  background-color: white;
+  border-radius: 1.5rem 1.5rem 0 0;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.tip-calculator .input-control {
+  height: 3rem;
+  width: 100%;
+  position: relative;
+  border-radius: 0.3rem;
+  background-color: #f4fafa;
+}
+.tip-calculator .icon {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translate(-50%, -50%);
+}
+.tip-calculator label {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.3rem;
+}
+.tip-calculator input {
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 0.3rem;
+  font-family: "Space Mono", Serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #00494d;
+  text-align: right;
+}
+.tip-calculator input::-webkit-outer-spin-button, .tip-calculator input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.tip-calculator input[type=number] {
+  -moz-appearance: textfield;
+}
+.tip-calculator input:focus {
+  border: 2px solid #7f9c9f;
+}
+.tip-calculator .head {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.tip-calculator .head .title {
+  color: #5e7a7d;
+}
+.tip-calculator .head .error {
+  color: #bb5d5d;
+}
+.tip-calculator .tip-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.tip-calculator .tip-selector .tip {
+  height: 3rem;
+  width: 100%;
+}
+.tip-calculator .tip-selector button {
+  background-color: #00494d;
+  color: #f4fafa;
+}
+.tip-calculator .tip-selector button.active {
+  background-color: #7f9c9f;
+  color: #00494d;
+}
+.tip-calculator .tip-selector button:active,
+.tip-calculator .tip-selector button.active:active {
+  background-color: #c5e4e7;
+  color: #00494d;
+}
+.tip-calculator .controls {
+  padding: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.tip-calculator .results {
+  background-color: #00494d;
+  border-radius: 1rem;
+  padding: 3rem 1.5rem 1.5rem;
+}
+.tip-calculator .tip-amount,
+.tip-calculator .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.tip-calculator .head {
+  color: #f4fafa;
+}
+.tip-calculator .subhead {
+  color: #7f9c9f;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.tip-calculator .result {
+  color: #7f9c9f;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.tip-calculator #reset {
+  background-color: #7f9c9f;
+  color: #00494d;
+}
+.tip-calculator #reset:active {
+  background-color: #c5e4e7;
+}
+
+/*# sourceMappingURL=style.css.map */

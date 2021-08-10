@@ -1,0 +1,25 @@
+{
+  "name": "tip-calculator-app",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Halgom/tip-calculator-app.git"
+  },
+  "keywords": [
+    "Frontendmentor"
+  ],
+  "author": "Halgom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Halgom/tip-calculator-app/issues"
+  },
+  "homepage": "https://github.com/Halgom/tip-calculator-app#readme",
+  "dependencies": {
+    "sass": "^1.37.5"
+  }
+}

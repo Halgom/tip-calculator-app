@@ -1,0 +1,168 @@
+@import "./variables";
+@import "./components";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $cyan_300;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+
+  img {
+    margin: 1.5rem auto;
+  }
+}
+
+.tip-calculator {
+
+  font-size: 1.5rem;
+  font-family: "Space Mono", Serif;
+
+  .container {
+    background-color: $white;
+    border-radius: 1.5rem 1.5rem 0 0;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .input-control {
+    height: 3rem;
+    width: 100%;
+    position: relative;
+    border-radius: 0.3rem;
+    background-color: $cyan_100;
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    transform: translate(-50%, -50%);
+  }
+
+  label {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.3rem;
+  }
+
+  input {
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 0.3rem;
+    font-family: "Space Mono", Serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: $cyan_900;
+    text-align: right;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    &[type="number"] {
+      -moz-appearance: textfield;
+    }
+  }
+
+  input:focus {
+    border: 2px solid $cyan_500;
+  }
+
+  .head {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+
+    .title {
+      color: $cyan_700;
+    }
+    .error {
+      color: $red_500;
+    }
+  }
+
+  .tip-selector {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    .tip {
+      height: 3rem;
+      width: 100%;
+    }
+
+    button {
+      @extend %btn;
+      background-color: $cyan_900;
+      color: $cyan_100;
+    }
+    button.active {
+      background-color: $cyan_500;
+      color: $cyan_900;
+    }
+    button:active,
+    button.active:active {
+      background-color: $cyan_300;
+      color: $cyan_900;
+    }
+  }
+
+  .controls {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .results {
+    background-color: $cyan_900;
+    border-radius: 1rem;
+    padding: 3rem 1.5rem 1.5rem;
+  }
+
+  .tip-amount,
+  .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .head {
+    color: $cyan_100;
+  }
+  .subhead {
+    color: $cyan_500;
+    font-size: .8rem;
+    font-weight: bold;
+  }
+  .result {
+    color: $cyan_500;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  #reset {
+    @extend %btn;
+    background-color: $cyan_500;
+    color: $cyan_900;
+  }
+  #reset:active {
+    background-color: $cyan_300;
+  }
+}
