@@ -100,6 +100,9 @@ header img {
   height: 3rem;
   width: 100%;
 }
+.tip-calculator .tip-selector #tip-custom {
+  padding: 0.5rem;
+}
 .tip-calculator .tip-selector button {
   background-color: #00494d;
   color: #f4fafa;
